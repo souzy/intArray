@@ -22,8 +22,8 @@ private:
 
 IntArray::IntArray(int size) {
    //allocate memory in the constructor for the int array
-  len = size;
-  data = new int [len];
+  	len = size;
+  	data = new int [len];
  
 }
 
@@ -31,27 +31,27 @@ IntArray::~IntArray() {
 }
 
 int & IntArray::operator[](int i) const {
-   return data[i];
+  	return data[i];
 }
 
 int IntArray::size() const {
-  return len;
+  	return len;
 }
 void IntArray:: fill(int k) {
-  for(int i = 0; i < len; i++){
-    data[i] = k ;
+   	for(int i = 0; i < len; i++){
+   	data[i] = k ;
     }
 }
 
 int * IntArray::begin(){
-  return data;
+   	return data;
 }
 
 int * IntArray::end(){
-  return data+len;
+   	return data+len;
 }
 int main(int argc, char * args[]) {
-        IntArray a(3);
+   	IntArray a(3);
 	
         a[0] = 10;
         a[1] = 11;
