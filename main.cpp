@@ -21,7 +21,7 @@ private:
 };
 
 IntArray::IntArray(int size) {
-   //allocate memory in the constructor for the int array
+ //allocate memory in the constructor for the int array
   	len = size;
   	data = new int [len];
  
